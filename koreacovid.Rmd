@@ -36,9 +36,38 @@ with(kRdata, table(Sex, result))
 
 ```
 
+No, dying is a dependent variable of sex. Dying is the outcome of people who got covid 19.
+
+
 ## We create two bar charts - one based on frequency and the other on percent, use ggplot commands to do this
 
-`
+
+
+#### Plot barplots ggplot way
+
+```{r}
+dd2 <- kRdata %>% group_by(result,sex) %>% summarize(count=n()) %>% mutate(prcnt=count/sum(count))
+
+
+# the group_by followed by summarize(count=n())
+
+basicC <- ggplot(dd2,aes(x=result,y=count,fill=sex))
+basicC + geom_bar(stat="identity",position="dodge")
+
+#Now for percentage plot
+
+basicCC <- ggplot(dd2,aes(x=result,y=prcnt*100,fill=sex)) 
+basicCC + geom_bar(stat="identity", position = "dodge")
+```
+
+
+#### Plot barplots tigerstats way
+
+```{r}
+barchartGC(~result + sex,data=kRdata)
+barchartGC(~result + sex,data=kRdata, type="percent")
+
+```
 
   
 
