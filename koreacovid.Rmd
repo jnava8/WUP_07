@@ -93,5 +93,9 @@ fisher.test(table1)
 ```
 
 
+The odds of dying if you are a male are somewhere between 1.4 and 9.The observed odds are 2.3 times more like to dye of covid 19 if you are a male than a female. The fishers test is .00009  smaller than the p-value, I will reject the null hypothesis based on this observation. 
+
 ## Conclusions
+
+After conducting a series of data analysis, I can conquer that women are more likely to contract covid 19 and live while men have higher odds of dying if infected with covid 19. 
 
