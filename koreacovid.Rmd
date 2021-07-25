@@ -76,8 +76,13 @@ These results tell me that women are more likely to get infected with covid 19 a
   
 ## Numerical results
 
+```{r}
+table1 <- xtabs(~result + sex, data=kRdata)
+rowPerc(table1)
+colPerc(table1)
+```
 
-
+These numerical results tell me that for every 100 people who got infected with covid 19 56 were female and 44 were male who lived. It also tells me that out of every 100 people who got infected with covid 19 36 were women who died and 64 were men and died. The second numerical results tell me that 98.7% of women lived after contracting covid 19 and 1.4% of those women died after getting covid 19. It also tells me that 97% of men lived after contracting covid 19 and 3% died. 
 
 ## Inferential results 
 
