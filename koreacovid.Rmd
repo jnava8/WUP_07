@@ -70,13 +70,13 @@ barchartGC(~result + sex,data=kRdata, type="percent")
 ```
 
   
-
-
-
+These results tell me that women are more likely to get infected with covid 19 and live, and it also tells me that there has been more death cases in men than women once they are infected with covid 19. These graphs also show me that there has been more than 20% more deaths in men once they are infected with covid 19, and there has been more than 10% of cases in women than men who have lived once they got infected with covid 19. 
 
 
   
 ## Numerical results
+
+
 
 
 ## Inferential results 
